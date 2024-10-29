@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Catamaran", sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+}
+html body p, html body label, html body span{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #54585a;
+    margin: 0;
+    padding: 0;
+}
+html body ul, html body li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html body h1{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    padding: 0;
+    margin: 0;
+}
+html body h2{
+    color: #54585A;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+}
+.container-wrapper {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+a.navbar-brand img {
+    max-width: 250px;
+}
+a.navbar-brand{
+    padding: 0px !important;
+}
+html body .main-header-section ul.navbar-nav li a {
+    font-size: 18px;
+    padding: 10px 30px !important;
+    font-weight: 500;
+}
+html body .main-header-section nav.navbar.navbar-expand-lg {
+    padding: 0;
+}
+.navigation-box {
+    width: 100%;
+    display: flex;
+}
+header.main-header-section {
+    width: 100%;
+    padding: 20px 25px;
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background: #fff;
+    z-index: 999;
+    box-shadow: 0px -50px 50px #000;
+}
+.main-hero-banner-section{
+    width: 100%;
+    padding: 190px 0 190px 0;
+    position: relative;
+}
+.main-hero-banner-section:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.main-hero-inner-banner-section p {
+    font-size: 30px;
+    line-height: 40px;
+    color: #fff;
+}
+.main-corner-speciality-section{
+    width: 100%;
+    height: 100%;
+    padding: 100px 0 100px 0;
+}
+.main-corner-speciality-inner-section p {
+    padding-top: 25px;
+}
+.cards-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    gap: 25px;
+}
+.card-box {
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+    padding: 30px 15px 30px 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+.card-box:hover{
+    background-color: #326295;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.card-box:hover p{
+    color: #fff;
+}
+.card-box i{
+    font-size: 50px;
+    padding: 0 0 10px 0;
+    color: #326295;
+}
+.card-box:hover i{
+    color: #fff;
+}
+.main-acreditation-section{
+    width: 100%;
+    background-color: #EDEDED;
+    padding: 100px 0 100px 0;
+}
+.inner-accreditation-section{
+    text-align: center;
+}
+.inner-accreditation-section p {
+    padding: 25px 0 45px 0;
+}
+.inner-accreditation-section img {
+    max-width: 500px;
+}
+.main-video-section{
+    width: 100%;
+    padding: 120px 0 120px 0;
+    background-color: #4D8ED3;
+}
+.main-video-inner-section{
+    text-align: center;
+}
+.video-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin: 30px 0 0 0;
+}
+.video-box video {
+    width: 100%;
+    height: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98.6%;
+    background-image: url(../images/shutterstock_297132446-scaled.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    z-index: 2;
+}
+i.fa.fa-play-circle-o {
+    font-size: 80px;
+    color: #fff;
+    cursor: pointer;
+}
+.main-our-specialized-program-section{
+    width: 100%;
+    padding: 100px 0 100px 0;
+    background-color: #EDEDED;
+}
+.main-inner-specialized-program-section {
+    text-align: center;
+}
+.main-inner-specialized-program-section p {
+    padding: 20px 0 20px 0;
+}
+.specialized-card-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 0 0;
+    column-gap: 40px;
+}
+.special-card {
+    width: 50%;
+    height: 180px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px 50px 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.special-card:hover{
+    background-color: #326295;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.special-card:hover img{
+    filter: brightness(20);
+}
+.special-card:hover p{
+    color: #fff;
+}
+.special-card img{
+    max-width: 70px;
+    padding: 0 0 10px 0;
+}
+
+
+
+.main-faqs-section{
+    width: 100%;
+    padding: 100px 0 100px 0;
+}
+i.fa.fa-play-circle-o {
+    font-size: 80px;
+    color: #fff;
+    cursor: pointer;
+}
+.last-section{
+    text-align: center;
+    padding-top: 50px;
+}
+.last-section h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #54585A;
+    line-height: 28px;
+}
+.last-section p {
+    text-align: center;
+    font-size: 15px;
+    color: #54585A;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.inner-phone-num{
+    font-weight: 600;
+    color: #54585A;
+}
+button.accordion-button.collapsed {
+    font-size: 18px;
+    font-weight: 500;
+    color: #54585a;
+    font-family: "Catamaran", sans-serif;
+    background-color: #ededed;
+    border: none !important;
+    border-radius: 0px !important;
+}
+.accordion-button:not(.collapsed) {
+    color: #ffffff !important;
+    background-color: #326295 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    font-family: "Catamaran", sans-serif;
+}
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+    border-radius: 0px !important;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+.accordion-item {
+    margin: 0 0 10px 0;
+}
+.accordion-body {
+    background-color: #F2F2F2;
+    padding: 30px 20px 30px 20px;
+}
+button.accordion-button.collapsed::after {
+    filter: invert(10) brightness(0);
+}
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(20) !important;
+}
+div#accordionPanelsStayOpenExample {
+    margin: 20px 0 0 0;
+}
+.main-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    margin-top: 50px;
+}
+.main-btns a {
+    background-color: #326295;
+    color: white;
+    padding: 12px 45px 12px 45px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border: 1px solid #326295;
+    text-decoration: none;
+}
+.main-btns a:hover{
+    background-color: #fff;
+    color: #326295;
+    border: 1px solid #326295;
+    transition: 0.5s  ease;
+    cursor: pointer;
+}
+.main-multiple-video-slider-section{
+    width: 100%;
+    padding: 100px 0 100px 0;
+    display: inline-block;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+.mySwiper2 {
+    height: 80%;
+    width: 100%;
+}
+.mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+.thumbnail-images img {
+    height: 120px;
+    object-fit: cover;
+}
+.title-box {
+    text-align: center;
+    padding-bottom: 40px;
+}
+.thumbnail-images video#downloaded-video {
+    height: 130px;
+}
+.inner-main-footer-section ul li a {
+    text-decoration: none;
+    color: #54585a;
+}
+.main-footer-section{
+    width: 100%;
+    padding: 100px 0 0 0;
+    background-color: #EDEDED;
+}
+.inner-main-footer-section {
+    display: flex;
+    gap: 35px;
+    padding-bottom: 50px;
+}
+.first-footer-sec{
+    width: 35%;
+}
+.first-footer-sec img{
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+.second-footer-sec{
+    width: 20%;
+}
+.fourth-footer-sec {
+    width: 25%;
+}
+.inner-social-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.second-footer-sec ul li {
+    padding-bottom: 10px;
+}
+.inner-social-icon img{
+    width: 35px;
+    object-fit: cover;
+}
+.inner-social-icon img:hover{
+   filter: brightness(0);
+   cursor: pointer;
+}
+.last-main-footer-section {
+    width: 100%;
+    padding: 28px 0 28px 0;
+    background-color: #333;
+}
+.copy-right-sec{
+    width: 100%;
+    text-align: center;
+}
+.copy-right-sec p{
+    font-size: 16px;
+    color: #fff;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    width: 50px !important;
+    min-width: 50px;
+    background: #007aff;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+}
+div#navbarNav {
+    background: #fff;
+}
+html body header .dropdown-toggle::after {
+    vertical-align: .076em !important;
+}
+@media screen and (max-width: 1200px) {
+html body .main-header-section ul.navbar-nav li a {
+    font-size: 16px;
+    padding: 10px 20px !important;
+}
+a.navbar-brand img {
+    max-width: 200px;
+}
+}
+@media screen and (max-width: 768px) {
+    html body h1{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    html body h2{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .main-hero-banner-section {
+        padding: 100px 0 100px 0;
+    }
+    .main-corner-speciality-section,
+    .main-acreditation-section,
+    .main-video-section,
+    .main-multiple-video-slider-section,
+    .main-our-specialized-program-section,
+    .main-faqs-section {
+        padding: 50px 0 50px 0;
+    }
+    .inner-accreditation-section img {
+        max-width: 300px;
+    }
+    .inner-accreditation-section p {
+        padding: 15px 0 20px 0;
+    }
+    .thumbnail-images img {
+        height: 80px;
+    }
+    .main-footer-section {
+        padding: 50px 0 0 0;
+    }
+    .inner-main-footer-section {
+        flex-wrap: wrap;
+        gap: 28px;
+    }
+    .second-footer-sec {
+        width: 48%;
+    }
+    .first-footer-sec {
+        width: 48%;
+    }
+}
+@media screen and (max-width: 641px) {
+    .main-corner-speciality-section,
+    .main-acreditation-section,
+    .main-video-section,
+    .main-multiple-video-slider-section,
+    .main-our-specialized-program-section,
+    .main-faqs-section {
+        padding: 30px 0 30px 0;
+    }
+    .main-hero-inner-banner-section p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .second-footer-sec, .first-footer-sec {
+        width: 100%;
+        text-align: center;
+    }
+    .inner-main-footer-section {
+        gap: 0px;
+    }
+    .fourth-footer-sec {
+        width: 100%;
+        text-align: center;
+    }
+    .inner-social-icon {
+        justify-content: center;
+    }
+    .second-footer-sec ul li {
+        padding-top: 10px;
+    }
+    .last-main-footer-section {
+        padding: 20px 10px 20px 10px;
+    }
+    .main-btns {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .specialized-card-row {
+        flex-wrap: wrap;
+        padding: 0px 0 0 0;
+    }
+    .special-card {
+        width: 100%;
+        height: 130px;
+        margin-bottom: 20px;
+    }
+    .cards-row {
+        flex-wrap: wrap;
+    }
+    .card-box {
+        width: 100%;
+    }
+    a.navbar-brand img {
+        max-width: 150px;
+    }
+    html body h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    i.fa.fa-play-circle-o {
+        font-size: 40px;
+    }
+    .mySwiper2 {
+        height: 40%;
+        width: 100%;
+    }
+    html body .swiper video {
+        height: 250px !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+    header.main-header-section {
+        height: 75px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .thumbnail-images img {
+        height: 55px;
+    }
+    button.accordion-button.collapsed,
+    .accordion-button:not(.collapsed) {
+        font-size: 16px !important;
+        line-height: 26px;
+    }
+    html body h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .main-hero-banner-section {
+        padding: 70px 0 70px 0;
+    }
+    .inner-accreditation-section img {
+        max-width: 200px;
+    }
+}
