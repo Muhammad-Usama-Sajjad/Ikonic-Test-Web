@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iknonic Test Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="main-header-section" id="header-section">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand" href="#"><img src="images/website-logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Who We Serve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>    
+<main>
+<section class="main-hero-banner-section" id="hero-banner-section">
+    <div class="hero-banner-overlay"></div>
+    <div class="container-wrapper">
+        <div class="main-hero-inner-banner-section" data-aos="fade-right">
+            <h1>Cornerstone Speciality Hospitals</h1>
+            <p>Southwest Louisiana</p>
+        </div>
+    </div>
+</section>
+<section class="main-corner-speciality-section" id="speciality-section">
+    <div class="container-wrapper">
+        <div class="main-corner-speciality-inner-section" data-aos="fade-up">
+            <h2>Cornerstone Speciality Hospitals Southwest Louisiana</h2>
+            <p>Cornerstone Specialty Hospitals Southwest Louisiana, located in Lake Charles, exists to care for patients in need of intensive and specialized care. Designed as a bridge in the continuum of care, patients who transition to Cornerstone Specialty Hospitals from a traditional hospital/short term acute care hospital receive a customized treatment plan from a dedicated team. With a connection from the heart, we’re focused on empowering our patients to achieve their goals.</p>
+        </div>
+        <div class="cards-row" data-aos="fade-up">
+            <div class="card-box">
+                <i class="fa fa-map" aria-hidden="true"></i>
+                <p>542 Dr Michel</p>
+            </div>
+            <div class="card-box">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>+92 11 111 111</p>
+            </div>
+            <div class="card-box">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <p>Follow Us</p>
+            </div>
+            <div class="card-box">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <p>Success Stories</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-acreditation-section" id="acreditation-section">
+    <div class="container-wrapper">
+        <div class="inner-accreditation-section" data-aos="fade-up">
+            <h2>Accreditation</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic blanditiis harum adipisci ullam alias
+                esse dolorum aperiam, molestias quo, incidunt a minus. Vitae, voluptatem. Veniam deserunt amet
+                adipisci eum obcaecati.</p>
+            <img src="images/the-joint.png" alt="">
+        </div>
+    </div>
+</section>
+<section class="main-video-section" id="video-section">
+    <div class="container-wrapper">
+        <div class="main-video-inner-section">
+            <h2 class="text-white">Take a Virtual Tour</h2>
+        </div>
+        <div class="video-box" data-aos="fade-up">
+            <div class="overlay" onclick="playVideo()">
+                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+            </div>
+            <video id="downloaded-video" controls>
+                <source src="images/banner-background-video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+<section class="main-multiple-video-slider-section" id="multiple-video-slide-section">
+    <div class="container-wrapper">
+        <div class="main-multiple-video-inner-slider-section" data-aos="fade-up">
+            <div class="title-box">
+                <h2>Why We Make A Difference in Southwest Louisiana</h2>
+            </div>
+            <div class="swiper mySwiper2" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video id="downloaded-video" controls>
+                            <source src="images/banner-background-video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video id="downloaded-video" controls>
+                            <source src="images/banner-background-video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper thumbnail-images justify-content-center">
+                    <div class="swiper-slide">
+                        <img src="images/shutterstock_297132446-scaled.jpg"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/shutterstock_297132446-scaled.jpg"/>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</section>
+<section class="main-our-specialized-program-section" id="specialized-program-section">
+    <div class="container-wrapper">
+        <div class="main-inner-specialized-program-section" data-aos="fade-up">
+            <h2>Our Specialized Programs</h2>
+            <p>Cornerstone Specialty Hospitals offer the following types of care:</p>
+        </div>
+        <div class="specialized-card-row" data-aos="fade-up">
+            <div class="special-card">
+                <img src="images/nursing-home.png" alt="">
+                <p>Critical Crae Program</p>
+            </div>
+            <div class="special-card">
+                <img src="images/lungs.png" alt="">
+                <p>Pulmonary Program</p>
+            </div>
+        </div>
+        <div class="specialized-card-row" data-aos="fade-up">
+            <div class="special-card">
+                <img src="images/desktop.png" alt="">
+                <p>Medically complex program</p>
+            </div>
+            <div class="special-card">
+                <img src="images/virus.png" alt="">
+                <p>Infectious Dicease Program</p>
+            </div>
+        </div>
+        <div class="specialized-card-row" data-aos="fade-up">
+            <div class="special-card">
+                <img src="images/human-brain.png" alt="">
+                <p>Neourology Program</p>
+            </div>
+            <div class="special-card">
+                <img src="images/healthcare.png" alt="">
+                <p>Wound Care Program</p>
+            </div>
+        </div>
+        <div class="specialized-card-row justify-content-center" data-aos="fade-up">
+            <div class="special-card">
+                <img src="images/people.png" alt="">
+                <p>Neourology Program</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-faqs-section" id="faqs-section">
+    <div class="container-wrapper">
+        <div class="main-faqs-inner-section" data-aos="fade-up">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Is a Cornerstone Specialty Hospital right for me?
+                    </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p>Cornerstone Specialty Hospitals provide care for those who are ready to be discharged from a general acute care hospital, but require an additional extended period of intensive medical care before they are ready to return home. Treatment and care is designed to bridge the gap between the acute care hospital and home.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Are Cornerstone Specialty Hospitals and nursing homes the same?
+                    </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas nihil, quam corporis quisquam illo!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        How are Cornerstone Specialty Hospitals different from general acute care hospitals?
+                    </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas nihil, quam corporis quisquam illo!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Why do patients and families choose Cornerstone Specialty Hospitals?
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas nihil, quam corporis quisquam illo!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        How can I get treatment at Cornerstone Specialty Hospitals?
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas nihil, quam corporis quisquam illo!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        How can I get treatment at Cornerstone Specialty Hospitals?
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas nihil, quam corporis quisquam illo!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        How can I get treatment at Cornerstone Specialty Hospitals?
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas nihil, quam corporis quisquam illo!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        How can I get treatment at Cornerstone Specialty Hospitals?
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quas nihil, quam corporis quisquam illo!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last-section">
+            <h4>In compliance with the Centers for Medicare and Medicaid Services, price transparency information is available below.</h4>
+            <p>Your out-of-pocket costs may vary depending upon multiple factors, including the specifics of your insurance plan and your individualized treatment plan. Please reach out to our Central Billing Office with any questions at <span class="inner-phone-num">(469) 621-6671</span> .</p>
+        </div>
+        <div class="main-btns">
+            <a href="#">Standard Charges</a>
+            <a href="#">Shoppable Service</a>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="main-footer-section" id="footer-section">
+    <div class="container-wrapper">
+        <div class="inner-main-footer-section">
+            <div class="first-footer-sec">
+                <img src="images/website-logo.png" alt="">
+                <p>Our mission is to make a difference by providing exceptional care and delivering the best experience. We pride ourselves on our quality of care, responsive service, and commitment to excellence.</p>
+            </div>
+            <div class="second-footer-sec">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Who We Serve</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="second-footer-sec">
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Specialty Hospitals</a></li>
+                    <li><a href="#">Senior Living</a></li>
+                    <li><a href="#">Behavioral Health</a></li>
+                </ul>
+            </div>
+            <div class="fourth-footer-sec">
+                <div class="inner-social-icon">
+                    <img src="images/twitter.png" alt="Twitter">
+                    <img src="images/facebook.png" alt="Facebook">
+                    <img src="images/linkedin.png" alt="linkedin">
+                </div>
+                <div class="last-after-text">
+                    <p>2200 Ross Avenue, Suite 5400 Dallas, TX 75201</p>
+                    <p>(469) 621-6700</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="last-main-footer-section">
+            <div class="inner-last-main-footer-section">
+                <div class="copy-right-sec">
+                    <p>© 2022 Cornerstone Healthcare Group. All rights reserved.</p>
+                </div>
+            </div>
+    </section>
+</footer>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+function playVideo() {
+    const video = document.getElementById("downloaded-video");
+    const overlay = document.querySelector(".overlay");
+    if (video) {
+        overlay.style.display = "none";
+        
+        video.play().catch(function(error) {
+        console.error("Error playing the video:", error);
+    });
+    } else {
+        console.error("Video element not found!");
+    }
+}   
+var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+    },
+});
+AOS.init({
+      offset: 200,
+      duration: 1000,
+      easing: 'ease-in-out',
+      delay: 100,
+});
+</script>
+</body>
+</html>
